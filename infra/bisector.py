@@ -401,7 +401,7 @@ def _repl(bisect_type, commit, test_case_path, fuzz_target, build_data, repl=Fal
 
     # Anthony: Probably good enough
     # This will claim success if the old commit has the bug and the new commit does not
-    return Result(repo_url, commit_list[old_idx])
+    return Result(repo_url, commit_list[new_idx])
 
 
 def repl(bisect_type, commit, test_case_path, fuzz_target, build_data):
