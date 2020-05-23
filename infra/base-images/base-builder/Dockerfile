@@ -63,6 +63,8 @@ ENV SANITIZER_FLAGS_dataflow "-fsanitize=dataflow"
 # Do not use any sanitizers in the coverage build.
 ENV SANITIZER_FLAGS_coverage ""
 
+ENV SANITIZER_FLAGS_none ""
+
 # We use unsigned-integer-overflow as an additional coverage signal and have to
 # suppress error messages. See https://github.com/google/oss-fuzz/issues/910.
 ENV UBSAN_OPTIONS="silence_unsigned_overflow=1"
